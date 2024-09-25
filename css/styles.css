@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(131, 109, 109);
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(48, 46, 42);
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+    color: antiquewhite;
+    
+}
+
+.navbar ul {
+    display: flex;
+}
+
+
+
+
+.navbar li {
+    padding: 10px;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(53, 49, 49);
+    border: 1px solid gray;
+    border-radius: 2px;
+    background-color: antiquewhite;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: antiquewhite;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background-color: rgb(53, 49, 49);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.filmes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+#filme {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(48, 46, 42);
+    margin: 10px auto;
+    width: 300px;
+    transition: 0.4s;
+}
+
+#filme:hover {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(48, 46, 42, 0.637);
+    margin: 10px auto;
+    width: 300px;
+}
+
+
+#filme h2, p {
+    color: antiquewhite;
+    text-align: center;
+}
+
+#filme h2 {
+    margin-bottom: 10px;
+}
+
+#filme p {
+    margin-bottom: 10px;
+}
+
+.filmes img {
+    width: 300px;
+    height: 400px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+    .navbar a {
+        text-decoration: none;
+        color: rgb(53, 49, 49);
+        border: 1px solid gray;
+        border-radius: 2px;
+        background-color: antiquewhite;
+        padding: 5px;
+        font-weight: bold;
+        transition: 0.4s;
+        
+    }
+}
+
+@media(max-width: 450px) {
+    .navbar h1 {
+        font-size: 20px;
+        color: antiquewhite;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: rgb(53, 49, 49);
+        border: 1px solid gray;
+        border-radius: 2px;
+        background-color: antiquewhite;
+        padding: 4px;
+        font-weight: bold;
+        transition: 0.4s;
+    }
+    .navbar li {
+        padding: 10px;
+        list-style: none;
+        font-size: 9px;
+    }
+}
